@@ -14,8 +14,11 @@ export const Home = (props) => {
         fetchMovies()
     }, [])
 
+    
+
     return(<>
         {console.log(fetchedMovies)}
+        {fetchedMovies.map(movie => <Movie movie={movie}/>)}
     </>)
 }
 
